@@ -1,0 +1,17 @@
+<template name="website_item">
+	<li id="{{_id}}">
+		<a href="{{url}}">{{title}}</a>
+		<p>{{description}}</p>
+		<p>Net score: {{votes}}</p>
+		<p><a href="/websites/{{_id}}">Comments</a></p>
+		<a href="#" class="btn btn-default js-upvote">
+			<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		</a>
+		<a href="#" class="btn btn-default js-downvote">
+			<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+		</a>
+		<a href="#" class="btn btn-default js-remove">
+			<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+		</a>
+	</li>
+</template>
