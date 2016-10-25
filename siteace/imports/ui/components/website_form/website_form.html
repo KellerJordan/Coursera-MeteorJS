@@ -10,7 +10,8 @@
 			</div>
 			<div class="form-group">
 				<label for="title">Title</label>
-				<input type="text" class="form-control" id="title" placeholder="Mysite">
+				<input type="text" class="form-control" id="title" placeholder="Mysite" disabled={{using_http}}>
+				<label class="checkbox-inline"><input type="checkbox" class="js-toggle-http" value="">Get from website using HTTP (Requires cross-origin resource sharing)</label>
 			</div>
 			<div class="form-group">
 				<label for="description">Description</label>
