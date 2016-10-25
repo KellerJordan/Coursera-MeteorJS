@@ -1,5 +1,6 @@
 Websites = new Mongo.Collection('websites');
 Comments = new Mongo.Collection('comments');
+UserPrefs = new Mongo.Collection('userprefs')
 
 Websites.allow({
 	insert(userId, doc) {
@@ -19,6 +20,13 @@ Websites.allow({
 });
 
 Comments.allow({
+	insert(userId, doc) {
+		if(Meteor.user()) return true;
+		return false;
+	}
+});
+
+UserPrefs.allow({
 	insert(userId, doc) {
 		if(Meteor.user()) return true;
 		return false;

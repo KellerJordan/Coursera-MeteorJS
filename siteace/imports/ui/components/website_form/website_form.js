@@ -3,6 +3,7 @@ import './website_form.html';
 Template.website_form.events({
 	'click .js-toggle-website-form'(event) {
 		$("#website_form").toggle('slow');
+		console.log('working');
 	},
 
 	'submit .js-save-website-form'(event) {

@@ -6,6 +6,7 @@ import '/imports/ui/components/website_form/website_form.js';
 import '/imports/ui/components/website_item/website_item.js';
 import '/imports/ui/components/website_list/website_list.js';
 import '/imports/ui/components/websites/websites.js';
+import '/imports/ui/components/search/search.js';
 
 Router.configure({
 	layoutTemplate: 'ApplicationLayout'
